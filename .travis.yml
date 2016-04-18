@@ -1,6 +1,10 @@
 sudo: false
 os:
   - linux
+branches:
+  only:
+    - sources
+    - /^deploy-.*$/
 env:
   global:
     - GH_REF: github.com/nomalab/nomalab.github.io.git
