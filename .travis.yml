@@ -1,8 +1,6 @@
 sudo: false
 os:
   - linux
-notifications:
-  slack: nomalabteam:XduKBu1ErNPhpiI97rRn49cE
 env:
   global:
     - GH_REF: github.com/nomalab/nomalab.github.io.git
