@@ -1,20 +1,22 @@
 sudo: false
 os:
-- linux
+  - linux
+notifications:
+  slack: nomalabteam:XduKBu1ErNPhpiI97rRn49cE
 env:
   global:
-  - GH_REF: github.com/nomalab/nomalab.github.io.git
-  - secure: YRqsmJmNFYy5Zpkgs8l3UD471RQlCiPjR21cnJB2i8d08Ijd56KIn2WgBWljFIF+JEWunJs/AfCz98NuPaxiyNk49mD+By6ArkCVn8sJNtzb9dbQPbYDyqDpteSRF0gJFxRJyFne25PIpge/UoYFu43gj15evbuKn2XB1TWcwOPoLzlW46MHiQw8+XcYRGfRVGxuh2VvGbqFu6vvQvw2VXQ18cUuFBTp1MQEsnMqiHYPf/fV0IV+RICONbh1QA0suZnVenAtlAUrASt6nM+Xz8YVau2z9z9dV1qkPloWEh6YicDKH6m+Hv+82+KqGYJ5ssw3S0x7thZITnL6OXVmN+ZksrZ7g2PRMNP6XOL4YMSkPW+yizbarq6SRVnUuHuml8jYrG6kMVelaLsbQO5n7uST45ycGVdkW0RVYXaBLPuD8mtKjA7Cz6TrhzR/zo4b3l++288duj7lqpMm+4f6MQ8d6do04BFN9KFloPPg8YEf91C6szL6yh9EAsUXR5+fG3Pf26EwO4/JbK24Ws2i36RgSKf+Gk6Tf+m3mgDNGLM2WlQKnEJfj/NGfMg7ZxR4b15+BvJRVJv8uVMG3LU+4bajk6LudRp3TuZ5vxgafbXyjdomWbuj4JuutY8lScXiPEWBWEdsgyLBTDYMOgvq9mUBbcQrgUi5IPOLwbdS+yc=
+    - GH_REF: github.com/nomalab/nomalab.github.io.git
+    - secure: YRqsmJmNFYy5Zpkgs8l3UD471RQlCiPjR21cnJB2i8d08Ijd56KIn2WgBWljFIF+JEWunJs/AfCz98NuPaxiyNk49mD+By6ArkCVn8sJNtzb9dbQPbYDyqDpteSRF0gJFxRJyFne25PIpge/UoYFu43gj15evbuKn2XB1TWcwOPoLzlW46MHiQw8+XcYRGfRVGxuh2VvGbqFu6vvQvw2VXQ18cUuFBTp1MQEsnMqiHYPf/fV0IV+RICONbh1QA0suZnVenAtlAUrASt6nM+Xz8YVau2z9z9dV1qkPloWEh6YicDKH6m+Hv+82+KqGYJ5ssw3S0x7thZITnL6OXVmN+ZksrZ7g2PRMNP6XOL4YMSkPW+yizbarq6SRVnUuHuml8jYrG6kMVelaLsbQO5n7uST45ycGVdkW0RVYXaBLPuD8mtKjA7Cz6TrhzR/zo4b3l++288duj7lqpMm+4f6MQ8d6do04BFN9KFloPPg8YEf91C6szL6yh9EAsUXR5+fG3Pf26EwO4/JbK24Ws2i36RgSKf+Gk6Tf+m3mgDNGLM2WlQKnEJfj/NGfMg7ZxR4b15+BvJRVJv8uVMG3LU+4bajk6LudRp3TuZ5vxgafbXyjdomWbuj4JuutY8lScXiPEWBWEdsgyLBTDYMOgvq9mUBbcQrgUi5IPOLwbdS+yc=
   matrix:
-  - ELM_VERSION=0.16.0 TARGET_NODE_VERSION=node
+    - ELM_VERSION=0.16.0 TARGET_NODE_VERSION=node
 install:
-- nvm install $TARGET_NODE_VERSION
-- nvm use $TARGET_NODE_VERSION
-- node --version
-- npm --version
-- npm install -g elm@$ELM_VERSION
-- npm install
-- npm install -g elm
-- elm-package install --yes
+  - nvm install $TARGET_NODE_VERSION
+  - nvm use $TARGET_NODE_VERSION
+  - node --version
+  - npm --version
+  - npm install -g elm@$ELM_VERSION
+  - npm install
+  - npm install -g elm
+  - elm-package install --yes
 script:
-- sh build.sh
+  - sh build.sh
