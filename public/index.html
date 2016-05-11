@@ -10,6 +10,8 @@
       html, body {
         width: 100%;
         height: 100%;
+        padding: 0;
+        margin: 0;
       }
       body {
         background: white;
@@ -32,12 +34,34 @@
       h1{
         font-size: 50px;
       }
+
+      svg * {
+        transition: fill 300ms linear;
+      }
     </style>
   </head>
   <body>
-    <script type="text/javascript" src="Home.js"></script>
+    <script type="text/javascript" src="http://localhost:8000/_compile/src/Home.elm"></script>
     <script type="text/javascript">
-      var app = Elm.fullscreen(Elm.Home);
+      var app = Elm.Home.fullscreen();
+
+      var requestAnimationFrame  = window.requestAnimationFrame
+                                || window.mozRequestAnimationFrame
+                                || window.webkitRequestAnimationFrame
+                                || window.msRequestAnimationFrame
+                                || function( callback ){ window.setTimeout(callback, 1000 / 60); };
+
+
+      requestAnimationFrame(function step() {
+        requestAnimationFrame(step);
+        app.ports.viewport.send(
+          { width: window.innerWidth
+          , height: window.innerHeight
+          , x: window.pageXOffset || document.documentElement.scrollLeft
+          , y: window.pageYOffset || document.documentElement.scrollTop
+          });
+      });
+
     </script>
   </body>
 </html>
