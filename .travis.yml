@@ -21,4 +21,4 @@ install:
   - npm install -g elm
   - elm-package install --yes
 script:
-  - sh build.sh
+  - sh publish.sh
