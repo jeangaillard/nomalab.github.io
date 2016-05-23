@@ -1,0 +1,81 @@
+#!/usr/bin/env node
+
+var UglifyJS = require('uglify-js');
+var fs = require('fs');
+var sys = require('util')
+var exec = require('child_process').exec;
+var extend = require('util')._extend;
+var nodemon = require('nodemon');
+var program = require('commander');
+var chokidar = require('chokidar');
+var livereload = require('livereload');
+
+program
+  .version('1.0.0')
+  .usage('[w]')
+  .option('-w, --watch', 'Watch file change')
+  // .option('-t, --test', 'Run tests')
+  .parse(process.argv);
+
+
+function make(source, dest){
+  return function(callback) {
+    exec("elm-make "+"src/"+source+" --output public/"+dest+ " --yes"
+    , putsWithCallback(callback));
+  };
+}
+
+var makeClient = make("Home.elm", "Home.js");
+
+var elmWatcher = chokidar.watch(__dirname+"/src/**/*.elm").on("change", function() {makeClient()});
+
+function autoRefresh() {
+  var livereloadServer = livereload.createServer({
+    exts: "html,js,css,elm,json,svg,png,jpg,gif".split(","),
+    applyJSLive: true
+  }).watch(__dirname+"/public/");
+}
+
+// Log
+function puts(error, stdout, stderr) {
+  if (error) {
+    console.error(stderr);
+  } else {
+    console.error(stdout);
+  }
+}
+function putsWithCallback(callback) {
+  return function(error, stdout, stderr) {
+    callback && callback();
+    puts(error, stdout, stderr);
+  }
+}
+
+if (program.watch) {
+  console.log('Building ui, and wait for changes\n');
+  makeClient(function (){
+    console.log('browserSync is enabled');
+    autoRefresh();
+  });
+} else {
+  console.log('Building ui');
+  makeClient(function(){
+    console.log('Compressing');
+    var result = UglifyJS.minify('public/Home.js', {
+      mangle: true,
+      compress: {
+        sequences: true,
+        dead_code: true,
+        conditionals: true,
+        booleans: true,
+        unused: true,
+        if_return: true,
+        join_vars: true,
+        drop_console: true
+      }
+    });
+
+    fs.writeFileSync('public/Home.js', result.code);
+    process.exit();
+  });
+}
