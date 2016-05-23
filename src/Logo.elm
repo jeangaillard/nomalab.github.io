@@ -44,7 +44,11 @@ view model slogan =
 
 mobileView model slogan =
   div
-    []
+    [ style
+        [ ("max-width", "500px")
+        , ("margin", "0 auto")
+        ]
+    ]
     [ img [ src "images/logo.svg", style [("width","100%")] ] []
     , div
       [ style
