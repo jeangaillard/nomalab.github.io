@@ -57,13 +57,12 @@ minifile v i alt top =
     [ defs
         []
         [ Svg.clipPath
-            [ id "mask"
+            [ id ("miniclip-" ++ (toString i))
             ]
             [ polygon [ id "maskShape" , points "40 369 0 349 0 0 100 0 100 339" ] []
             ]
         ]
-    , g [ id "mask"
-        , Svg.Attributes.clipPath "url(#mask)"
+    , g [ Svg.Attributes.clipPath ("url(#miniclip-" ++ (toString i) ++ ")")
         , fill "none"
         , fillRule "evenodd"
         , stroke "#1C2C3F"
@@ -96,14 +95,13 @@ minifileAlt v i alt top =
     [ defs
         []
         [ Svg.clipPath
-            [ id "mask"
+            [ id ("miniclipalt-" ++ (toString i))
             ]
             [ polygon [ id "maskShape" , points "0 1200 0 30 60 0 100 20 100 1200" ] []
             --[ polygon [ id "maskShape" , points "0 665 0 30 60 0 100 20 100 665" ] []
             ]
         ]
-    , g [ id "mask"
-        , Svg.Attributes.clipPath "url(#mask)"
+    , g [ Svg.Attributes.clipPath ("url(#miniclipalt-" ++ (toString i) ++ ")")
         , fill "none"
         , fillRule "evenodd"
         , stroke "#1C2C3F"
