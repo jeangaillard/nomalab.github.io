@@ -3,9 +3,7 @@
 set -e
 
 echo "$0: Building Home.elm ..."
-elm-make src/Home.elm --output public/Home.js --yes
-
-uglifyjs public/Home.js -o public/Home.js -c
+./build
 
 # go to the public directory and create a *new* Git repo
 cd public
