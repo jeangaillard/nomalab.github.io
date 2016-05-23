@@ -19,6 +19,7 @@ install:
   - npm install -g elm@$ELM_VERSION
   - npm install
   - npm install -g elm
+  - npm install uglify-js -g
   - elm-package install --yes
 script:
   - sh publish.sh
