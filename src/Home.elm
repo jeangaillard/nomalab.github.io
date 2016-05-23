@@ -61,7 +61,7 @@ init flags =
 -- SUBSCRIPTIONS
 
 
-subscriptions : MainModel -> Sub Msg
+subscriptions : Model -> Sub Msg
 subscriptions model =
   viewport Frame
 
@@ -78,4 +78,3 @@ view model =
   if model.context.width > 999
     then Desktop.view model
     else Mobile.view model
-

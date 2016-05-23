@@ -7539,6 +7539,7 @@ var _elm_lang$svg$Svg_Attributes$accumulate = _elm_lang$virtual_dom$VirtualDom$a
 var _elm_lang$svg$Svg_Attributes$accelerate = _elm_lang$virtual_dom$VirtualDom$attribute('accelerate');
 var _elm_lang$svg$Svg_Attributes$accentHeight = _elm_lang$virtual_dom$VirtualDom$attribute('accent-height');
 
+<<<<<<< HEAD
 var _nomalab$website$Animation$slotReverse = F2(
 	function (x, y) {
 		return A2(
@@ -9036,23 +9037,42 @@ var _nomalab$website$Model$Frame = function (a) {
 
 var _nomalab$website$Minifiles$slotsInnerAlt = F2(
 	function (x, y) {
+=======
+var _nomalab$website$Illustrations$bloc = F2(
+	function (s, i) {
+		var posY = (((i / s) | 0) * 20) + (A2(_elm_lang$core$Basics_ops['%'], i, s) * 20);
+		var posX = (((i / s) | 0) * 40) - (A2(_elm_lang$core$Basics_ops['%'], i, s) * 40);
+>>>>>>> sources
 		return A2(
 			_elm_lang$svg$Svg$g,
 			_elm_lang$core$Native_List.fromArray(
 				[
+<<<<<<< HEAD
+=======
+					_elm_lang$svg$Svg_Attributes$fillRule('evenodd'),
+					_elm_lang$svg$Svg_Attributes$strokeLinejoin('round'),
+>>>>>>> sources
 					_elm_lang$svg$Svg_Attributes$transform(
 					A2(
 						_elm_lang$core$Basics_ops['++'],
 						'translate(',
 						A2(
 							_elm_lang$core$Basics_ops['++'],
+<<<<<<< HEAD
 							_elm_lang$core$Basics$toString(x),
+=======
+							_elm_lang$core$Basics$toString(posX),
+>>>>>>> sources
 							A2(
 								_elm_lang$core$Basics_ops['++'],
 								', ',
 								A2(
 									_elm_lang$core$Basics_ops['++'],
+<<<<<<< HEAD
 									_elm_lang$core$Basics$toString(y),
+=======
+									_elm_lang$core$Basics$toString(posY),
+>>>>>>> sources
 									')')))))
 				]),
 			_elm_lang$core$Native_List.fromArray(
@@ -9061,8 +9081,16 @@ var _nomalab$website$Minifiles$slotsInnerAlt = F2(
 					_elm_lang$svg$Svg$polygon,
 					_elm_lang$core$Native_List.fromArray(
 						[
+<<<<<<< HEAD
 							_elm_lang$svg$Svg_Attributes$fill('#1B2B40'),
 							_elm_lang$svg$Svg_Attributes$points('60 10 0 40 60 70')
+=======
+							_elm_lang$svg$Svg_Attributes$class('right'),
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#DCDFE2'),
+							_elm_lang$svg$Svg_Attributes$points('40 70 40 40 80 20 80 50')
+>>>>>>> sources
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[])),
@@ -9070,6 +9098,7 @@ var _nomalab$website$Minifiles$slotsInnerAlt = F2(
 					_elm_lang$svg$Svg$polygon,
 					_elm_lang$core$Native_List.fromArray(
 						[
+<<<<<<< HEAD
 							_elm_lang$svg$Svg_Attributes$fill('#324865'),
 							_elm_lang$svg$Svg_Attributes$points('60 10 60 70 140 30 80 0')
 						]),
@@ -9106,6 +9135,13 @@ var _nomalab$website$Minifiles$slotsInner = F2(
 						[
 							_elm_lang$svg$Svg_Attributes$fill('#324865'),
 							_elm_lang$svg$Svg_Attributes$points('80 60 140 30 80 0')
+=======
+							_elm_lang$svg$Svg_Attributes$class('left'),
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#9CA2A8'),
+							_elm_lang$svg$Svg_Attributes$points('40 70 0 50 0 20 40 40')
+>>>>>>> sources
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[])),
@@ -9113,13 +9149,22 @@ var _nomalab$website$Minifiles$slotsInner = F2(
 					_elm_lang$svg$Svg$polygon,
 					_elm_lang$core$Native_List.fromArray(
 						[
+<<<<<<< HEAD
 							_elm_lang$svg$Svg_Attributes$fill('#1B2B40'),
 							_elm_lang$svg$Svg_Attributes$points('80 0 0 40 60 70 80 60')
+=======
+							_elm_lang$svg$Svg_Attributes$class('top'),
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#CDD0D3'),
+							_elm_lang$svg$Svg_Attributes$points('40 40 0 20 40 0 80 20')
+>>>>>>> sources
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[]))
 				]));
 	});
+<<<<<<< HEAD
 var _nomalab$website$Minifiles$slotsAlt = F3(
 	function (ctx, i, list) {
 		slotsAlt:
@@ -9282,10 +9327,35 @@ var _nomalab$website$Minifiles$minifile = F4(
 							_elm_lang$svg$Svg_Attributes$fillRule('evenodd'),
 							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
 							_elm_lang$svg$Svg_Attributes$strokeWidth('4')
+=======
+var _nomalab$website$Illustrations$fileMask2 = A2(
+	_elm_lang$svg$Svg$svg,
+	_elm_lang$core$Native_List.fromArray(
+		[
+			_elm_lang$svg$Svg_Attributes$width('280px'),
+			_elm_lang$svg$Svg_Attributes$height('200px'),
+			_elm_lang$svg$Svg_Attributes$viewBox('640 0 280 200'),
+			_elm_lang$svg$Svg_Attributes$version('1.1')
+		]),
+	_elm_lang$core$Native_List.fromArray(
+		[
+			A2(
+			_elm_lang$svg$Svg$defs,
+			_elm_lang$core$Native_List.fromArray(
+				[]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$svg$Svg$clipPath,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$id('mask')
+>>>>>>> sources
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
 							A2(
+<<<<<<< HEAD
 							_elm_lang$svg$Svg$g,
 							_elm_lang$core$Native_List.fromArray(
 								[
@@ -9422,10 +9492,102 @@ var _nomalab$website$Minifiles$minifileAlt = F4(
 							_elm_lang$svg$Svg_Attributes$fillRule('evenodd'),
 							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
 							_elm_lang$svg$Svg_Attributes$strokeWidth('4')
+=======
+							_elm_lang$svg$Svg$polygon,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$svg$Svg_Attributes$id('maskShape'),
+									_elm_lang$svg$Svg_Attributes$points('0 139 80 99 2 60 2 0 286 0 286 120 124 201')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[]))
+						]))
+				])),
+			A2(
+			_elm_lang$svg$Svg$g,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$svg$Svg_Attributes$id('mask'),
+					_elm_lang$svg$Svg_Attributes$fillRule('evenodd'),
+					_elm_lang$svg$Svg_Attributes$transform('translate(640, 0)'),
+					_elm_lang$svg$Svg_Attributes$clipPath('url(#mask)')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$svg$Svg$g,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$transform('translate(42, 19)')
+						]),
+					A2(
+						_elm_lang$core$Basics_ops['++'],
+						A2(
+							_elm_lang$core$List$map,
+							_nomalab$website$Illustrations$bloc(2),
+							_elm_lang$core$Native_List.range(0, 3)),
+						A2(
+							_elm_lang$core$List$map,
+							_nomalab$website$Illustrations$bloc(4),
+							_elm_lang$core$Native_List.range(8, 19))))
+				]))
+		]));
+var _nomalab$website$Illustrations$fileMask = A2(
+	_elm_lang$svg$Svg$svg,
+	_elm_lang$core$Native_List.fromArray(
+		[
+			_elm_lang$svg$Svg_Attributes$width('277px'),
+			_elm_lang$svg$Svg_Attributes$height('199px'),
+			_elm_lang$svg$Svg_Attributes$viewBox('638 0 277 199'),
+			_elm_lang$svg$Svg_Attributes$version('1.1')
+		]),
+	_elm_lang$core$Native_List.fromArray(
+		[
+			A2(
+			_elm_lang$svg$Svg$defs,
+			_elm_lang$core$Native_List.fromArray(
+				[]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$svg$Svg$polygon,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$id('path-1'),
+							_elm_lang$svg$Svg_Attributes$points('0 139 76 100 0 62 0 0 277 0 277 120 120 199')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[])),
+					A2(
+					_elm_lang$svg$Svg$rect,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$id('path-3'),
+							_elm_lang$svg$Svg_Attributes$x('0'),
+							_elm_lang$svg$Svg_Attributes$y('0'),
+							_elm_lang$svg$Svg_Attributes$width('277'),
+							_elm_lang$svg$Svg_Attributes$height('200')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[])),
+					A2(
+					_elm_lang$svg$Svg$mask,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$id('mask-4'),
+							_elm_lang$svg$Svg_Attributes$maskContentUnits('userSpaceOnUse'),
+							_elm_lang$svg$Svg_Attributes$maskUnits('objectBoundingBox'),
+							_elm_lang$svg$Svg_Attributes$x('0'),
+							_elm_lang$svg$Svg_Attributes$y('0'),
+							_elm_lang$svg$Svg_Attributes$width('277'),
+							_elm_lang$svg$Svg_Attributes$height('200'),
+							_elm_lang$svg$Svg_Attributes$fill('white')
+>>>>>>> sources
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
 							A2(
+<<<<<<< HEAD
 							_elm_lang$svg$Svg$g,
 							_elm_lang$core$Native_List.fromArray(
 								[
@@ -9562,24 +9724,70 @@ var _nomalab$website$Footer$twitterIcon = A2(
 		]),
 	_elm_lang$core$Native_List.fromArray(
 		[
+=======
+							_elm_lang$svg$Svg$use,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$svg$Svg_Attributes$xlinkHref('#path-3')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[]))
+						]))
+				])),
+>>>>>>> sources
 			A2(
 			_elm_lang$svg$Svg$g,
 			_elm_lang$core$Native_List.fromArray(
 				[
+<<<<<<< HEAD
 					_elm_lang$svg$Svg_Attributes$transform('translate(0.000000, 4.000000)')
+=======
+					_elm_lang$svg$Svg_Attributes$id('mask'),
+					_elm_lang$svg$Svg_Attributes$stroke('none'),
+					_elm_lang$svg$Svg_Attributes$strokeWidth('1'),
+					_elm_lang$svg$Svg_Attributes$fill('none'),
+					_elm_lang$svg$Svg_Attributes$fillRule('evenodd'),
+					_elm_lang$svg$Svg_Attributes$transform('translate(640, 0)')
+>>>>>>> sources
 				]),
 			_elm_lang$core$Native_List.fromArray(
 				[
 					A2(
+<<<<<<< HEAD
 					_elm_lang$svg$Svg$path,
 					_elm_lang$core$Native_List.fromArray(
 						[
 							_elm_lang$svg$Svg_Attributes$d('M4,15 L4,15 C4,21.0762495 8.9241635,26 15,26 C21.0762495,26 26,21.0758365 26,15 C26,8.92375047 21.0758365,4 15,4 C8.92375047,4 4,8.9241635 4,15 L4,15 Z M0,15 C0,6.71572875 6.71390727,0 15,0 C23.2842712,0 30,6.71390727 30,15 C30,23.2842712 23.2860927,30 15,30 C6.71572875,30 0,23.2860927 0,15 L0,15 Z'),
 							_elm_lang$svg$Svg_Attributes$fill('#3BAAFF')
+=======
+					_elm_lang$svg$Svg$mask,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$id('mask-2'),
+							_elm_lang$svg$Svg_Attributes$fill('white')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							A2(
+							_elm_lang$svg$Svg$use,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$svg$Svg_Attributes$xlinkHref('#path-1')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[]))
+						])),
+					A2(
+					_elm_lang$svg$Svg$g,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$id('Path-113')
+>>>>>>> sources
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[])),
 					A2(
+<<<<<<< HEAD
 					_elm_lang$svg$Svg$path,
 					_elm_lang$core$Native_List.fromArray(
 						[
@@ -9604,6 +9812,38 @@ var _nomalab$website$Footer$mailIcon = A2(
 					{ctor: '_Tuple2', _0: 'float', _1: 'left'},
 					{ctor: '_Tuple2', _0: 'margin', _1: '5px 10px '}
 				]))
+=======
+					_elm_lang$svg$Svg$g,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$id('Group'),
+							_elm_lang$svg$Svg_Attributes$mask('url(#mask-2)'),
+							_elm_lang$svg$Svg_Attributes$fill('#D8D8D8')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							A2(
+							_elm_lang$svg$Svg$use,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$svg$Svg_Attributes$id('Rectangle-1'),
+									_elm_lang$svg$Svg_Attributes$mask('url(#mask-4)'),
+									_elm_lang$svg$Svg_Attributes$xlinkHref('#path-3')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[]))
+						]))
+				]))
+		]));
+var _nomalab$website$Illustrations$file = A2(
+	_elm_lang$svg$Svg$svg,
+	_elm_lang$core$Native_List.fromArray(
+		[
+			_elm_lang$svg$Svg_Attributes$width('364px'),
+			_elm_lang$svg$Svg_Attributes$height('266px'),
+			_elm_lang$svg$Svg_Attributes$viewBox('594 -3 364 266'),
+			_elm_lang$svg$Svg_Attributes$version('1.1')
+>>>>>>> sources
 		]),
 	_elm_lang$core$Native_List.fromArray(
 		[
@@ -9611,20 +9851,36 @@ var _nomalab$website$Footer$mailIcon = A2(
 			_elm_lang$svg$Svg$g,
 			_elm_lang$core$Native_List.fromArray(
 				[
+<<<<<<< HEAD
 					_elm_lang$svg$Svg_Attributes$transform('translate(0.000000, 4.000000)')
+=======
+					_elm_lang$svg$Svg_Attributes$transform('translate(596, 0)'),
+					_elm_lang$svg$Svg_Attributes$strokeLinejoin('round')
+>>>>>>> sources
 				]),
 			_elm_lang$core$Native_List.fromArray(
 				[
 					A2(
+<<<<<<< HEAD
 					_elm_lang$svg$Svg$path,
 					_elm_lang$core$Native_List.fromArray(
 						[
 							_elm_lang$svg$Svg_Attributes$d('M4,15 L4,15 C4,21.0762495 8.9241635,26 15,26 C21.0762495,26 26,21.0758365 26,15 C26,8.92375047 21.0758365,4 15,4 C8.92375047,4 4,8.9241635 4,15 L4,15 Z M0,15 C0,6.71572875 6.71390727,0 15,0 C23.2842712,0 30,6.71390727 30,15 C30,23.2842712 23.2860927,30 15,30 C6.71572875,30 0,23.2860927 0,15 L0,15 Z'),
 							_elm_lang$svg$Svg_Attributes$fill('#3BAAFF')
+=======
+					_elm_lang$svg$Svg$polygon,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#CDD0D3'),
+							_elm_lang$svg$Svg_Attributes$points('160 260 0 180 0 140 160 220')
+>>>>>>> sources
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[])),
 					A2(
+<<<<<<< HEAD
 					_elm_lang$svg$Svg$path,
 					_elm_lang$core$Native_List.fromArray(
 						[
@@ -9969,18 +10225,115 @@ var _nomalab$website$Mobile$view = function (model) {
 				[model.i18n.keywords.diffusionCert, model.i18n.keywords.diffusionOnDemand])
 		}
 		]);
+=======
+					_elm_lang$svg$Svg$polygon,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#DCDFE2'),
+							_elm_lang$svg$Svg_Attributes$points('160 260 160 220 360 120 360 160')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[])),
+					A2(
+					_elm_lang$svg$Svg$path,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$d('M0,140 L0,60 L120,0 L360,120 L160,220 L0,140 Z M40,140 L120,100 L40,60 L120,20 L320,120 L160,200 L40,140 Z'),
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#FFFFFF')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[])),
+					A2(
+					_elm_lang$svg$Svg$polygon,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#DCDFE2'),
+							_elm_lang$svg$Svg_Attributes$points('80 160 40 140 120 100 120 140')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[])),
+					A2(
+					_elm_lang$svg$Svg$polygon,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#DCDFE2'),
+							_elm_lang$svg$Svg_Attributes$points('80 80 40 60 120 20 120 60')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[])),
+					A2(
+					_elm_lang$svg$Svg$polygon,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$svg$Svg_Attributes$stroke('#1C2C3F'),
+							_elm_lang$svg$Svg_Attributes$strokeWidth('4'),
+							_elm_lang$svg$Svg_Attributes$fill('#DCDFE2'),
+							_elm_lang$svg$Svg_Attributes$transform('scale(-1, 1)'),
+							_elm_lang$svg$Svg_Attributes$points('160 140 120 120 320 20 320 60')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[]))
+				]))
+		]));
+
+var _nomalab$website$Home$move = F2(
+	function (x, y) {
+		return _elm_lang$html$Html$div(
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$style(
+					_elm_lang$core$Native_List.fromArray(
+						[
+							{ctor: '_Tuple2', _0: 'position', _1: 'absolute'},
+							{
+							ctor: '_Tuple2',
+							_0: 'left',
+							_1: A2(
+								_elm_lang$core$Basics_ops['++'],
+								_elm_lang$core$Basics$toString(x),
+								'px')
+						},
+							{
+							ctor: '_Tuple2',
+							_0: 'top',
+							_1: A2(
+								_elm_lang$core$Basics_ops['++'],
+								_elm_lang$core$Basics$toString(y),
+								'px')
+						}
+						]))
+				]));
+	});
+var _nomalab$website$Home$view = function (model) {
+>>>>>>> sources
 	return A2(
 		_elm_lang$html$Html$div,
 		_elm_lang$core$Native_List.fromArray(
 			[
+<<<<<<< HEAD
 				_nomalab$website$Mobile$style(
 				_elm_lang$core$Native_List.fromArray(
 					[
 						{ctor: '_Tuple2', _0: 'padding', _1: '20px 10px'}
+=======
+				_elm_lang$html$Html_Attributes$style(
+				_elm_lang$core$Native_List.fromArray(
+					[
+						{ctor: '_Tuple2', _0: 'height', _1: '900px'}
+>>>>>>> sources
 					]))
 			]),
 		_elm_lang$core$Native_List.fromArray(
 			[
+<<<<<<< HEAD
 				A2(_nomalab$website$Logo$mobileView, model.logo, model.i18n.slogan),
 				A2(
 				_elm_lang$html$Html$div,
@@ -10109,15 +10462,53 @@ var _nomalab$website$Home$update = F2(
 	function (msg, model) {
 		var _p0 = msg;
 		var _p1 = _p0._0;
+=======
+				A2(
+				_elm_lang$html$Html$img,
+				_elm_lang$core$Native_List.fromArray(
+					[
+						_elm_lang$html$Html_Attributes$src('images/logo.svg')
+					]),
+				_elm_lang$core$Native_List.fromArray(
+					[])),
+				A3(
+				_nomalab$website$Home$move,
+				100,
+				300,
+				_elm_lang$core$Native_List.fromArray(
+					[
+						A3(
+						_nomalab$website$Home$move,
+						0,
+						0,
+						_elm_lang$core$Native_List.fromArray(
+							[_nomalab$website$Illustrations$file])),
+						A3(
+						_nomalab$website$Home$move,
+						40,
+						0,
+						_elm_lang$core$Native_List.fromArray(
+							[_nomalab$website$Illustrations$fileMask2]))
+					]))
+			]));
+};
+var _nomalab$website$Home$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+>>>>>>> sources
 		return {
 			ctor: '_Tuple2',
 			_0: _elm_lang$core$Native_Utils.update(
 				model,
+<<<<<<< HEAD
 				{
 					context: A2(_nomalab$website$Context$update, model.context, _p1),
 					scroll: _p1.scroll,
 					maxscroll: _elm_lang$core$Native_Utils.eq(_p1.scroll, 0) ? 0 : A2(_elm_lang$core$Basics$max, model.maxscroll, _p1.scroll)
 				}),
+=======
+				{viewport: _p0._0}),
+>>>>>>> sources
 			_1: _elm_lang$core$Platform_Cmd$none
 		};
 	});
@@ -10133,6 +10524,7 @@ var _nomalab$website$Home$viewport = _elm_lang$core$Native_Platform.incomingPort
 				function (height) {
 					return A2(
 						_elm_lang$core$Json_Decode$andThen,
+<<<<<<< HEAD
 						A2(_elm_lang$core$Json_Decode_ops[':='], 'scroll', _elm_lang$core$Json_Decode$int),
 						function (scroll) {
 							return _elm_lang$core$Json_Decode$succeed(
@@ -10163,6 +10555,42 @@ var _nomalab$website$Home$main = {
 						});
 				});
 		})
+=======
+						A2(_elm_lang$core$Json_Decode_ops[':='], 'x', _elm_lang$core$Json_Decode$int),
+						function (x) {
+							return A2(
+								_elm_lang$core$Json_Decode$andThen,
+								A2(_elm_lang$core$Json_Decode_ops[':='], 'y', _elm_lang$core$Json_Decode$int),
+								function (y) {
+									return _elm_lang$core$Json_Decode$succeed(
+										{width: width, height: height, x: x, y: y});
+								});
+						});
+				});
+		}));
+var _nomalab$website$Home$Model = function (a) {
+	return {viewport: a};
+};
+var _nomalab$website$Home$Viewport = F4(
+	function (a, b, c, d) {
+		return {width: a, height: b, x: c, y: d};
+	});
+var _nomalab$website$Home$init = {
+	ctor: '_Tuple2',
+	_0: _nomalab$website$Home$Model(
+		A4(_nomalab$website$Home$Viewport, 1000, 700, 0, 0)),
+	_1: _elm_lang$core$Platform_Cmd$none
+};
+var _nomalab$website$Home$Frame = function (a) {
+	return {ctor: 'Frame', _0: a};
+};
+var _nomalab$website$Home$subscriptions = function (model) {
+	return _nomalab$website$Home$viewport(_nomalab$website$Home$Frame);
+};
+var _nomalab$website$Home$main = {
+	main: _elm_lang$html$Html_App$program(
+		{init: _nomalab$website$Home$init, view: _nomalab$website$Home$view, update: _nomalab$website$Home$update, subscriptions: _nomalab$website$Home$subscriptions})
+>>>>>>> sources
 };
 
 var Elm = {};
