@@ -36,8 +36,8 @@ init w h l =
   { lang = if (String.startsWith "fr" l) then Fr else En
   , viewportWidth = w
   , viewportHeight = h
-  , width = 1000
-  , height = 2000
+  , width = w
+  , height = 23000
   , x = 0
   , y = 0
   }
