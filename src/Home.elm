@@ -61,7 +61,7 @@ init flags =
 -- SUBSCRIPTIONS
 
 
-subscriptions : Model -> Sub Msg
+subscriptions : MainModel -> Sub Msg
 subscriptions model =
   viewport Frame
 

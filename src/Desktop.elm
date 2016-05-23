@@ -90,6 +90,7 @@ titleStyle =
   , ("display", "block")
   , ("overflow", "hidden")
   , ("margin-top", "-4px")
+  , ("font-weight", "bold")
   ]
 
 innerTitleStyle =
@@ -98,6 +99,7 @@ innerTitleStyle =
   , ("display", "inline-block")
   , ("white-space", "nowrap")
   , ("text-transform", "uppercase")
+  , ("font-weight", "bold")
   ]
 
 keywordsTitle t i s =
