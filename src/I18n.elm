@@ -71,7 +71,7 @@ slogan =
             ]
         , fr =
             [ "Les nouveaux services labo "
-            , "pour producteurs, distributeurs "
+            , "pour les producteurs, distributeurs "
             , "et diffuseurs audiovisuels "
             ]
         }
@@ -100,15 +100,15 @@ keywordsMasterArchive =
 
 keywordsLabo =
     translate
-        { fr = "Labo en Ligne"
-        , en = "Online Lab"
+        { fr = "Labo dans un navigateur"
+        , en = "Lab in a browser"
         }
 
 
 keywordsLaboQc =
     translate
         { fr = "Contrôle qualité"
-        , en = "Quality check"
+        , en = "Quality control"
         }
 
 
@@ -122,7 +122,7 @@ keywordsLaboDelivery =
 keywordsDiffusion =
     translate
         { fr = "Diffusion"
-        , en = "Diffusion"
+        , en = "Broadcasting & VoD"
         }
 
 
@@ -135,15 +135,15 @@ keywordsDiffusion2 =
 
 keywordsDiffusionCert =
     translate
-        { fr = "Diffusion & Livrables certifiés"
-        , en = "Certified broadcast & delivery"
+        { fr = "Livrables certifiés"
+        , en = "Certified deliverables"
         }
 
 
 keywordsDiffusionOnDemand =
     translate
-        { fr = "Diffusion & Livrables à la demande"
-        , en = "On demand broadcast & delivery"
+        { fr = "Livrables à la demande"
+        , en = "On-demand delivery material"
         }
 
 
